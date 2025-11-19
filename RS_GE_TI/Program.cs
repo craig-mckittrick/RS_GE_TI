@@ -11,80 +11,93 @@ namespace RS_GE_TI
     {
         public static char itemName;
         public static int itemId;
-        static async Task Main()
-        {
-            Console.WriteLine();
-            Console.WriteLine("Welcome to the Runescape Grand Exchange Technical Indicator!");
-            var option = PrintMenu();
-            switch (option)
-            {
-                // Top 10 trades
-                case 1:
-                    Console.WriteLine($"You selected {option}. See top 10 trades");
-                    await GetTop10Trades();
-                    break;
-                // Lookup item value
-                case 2:
-                    break;
-                // List recommended buys
-                case 3:
-                    break;
-                // List recommended sells
-                case 4:
-                    break;
-                // Quit
-                case 5 or "" or null:
-                    break;
-            }
-            /*
-            Console.Write("Enter item number or starting letter [type 'esc' to quit]:  ");
-            string input = Console.ReadLine()?.ToLower() ?? "";
 
-            // input is a number
-            if (int.TryParse(input, out itemId))
-            {
-                Console.WriteLine($"You entered item number: {itemId}");
-                await Item_call_API();
-                break;
-            }
-            //cancel operation
-            else if (input.ToLower() == "esc")
-            {
-                break;
-            }
-            // input is a character
-            else if (!string.IsNullOrEmpty(input) && char.IsLetter(input[0]))
-            {
-                itemName = input[0];
-                Console.WriteLine($"You entered starting letter: {input[0]}");
-                // Call method to fetch items by letter
-                break;
-            }
-            // input is neither a number nor a character
-            else
-            {
-                Console.WriteLine("Invalid input. Please enter a number or a single letter [type 'esc' to quit]:  ");
-            }
-            */
+        private static void ClassBasics()
+        {
+            GE_Items a = new GE_Items();
+            GE_Items b = new GE_Items();
+
+            a.Name = "Maple logs";
+            a.ItemNumber = 1517;
+            a.Price = 319;
+            a.IsMembers = false;
+
+            b.Name = "Dragon hatchet";
+            b.ItemNumber = 6739;
+            b.Price = 36.8;
+            b.IsMembers = true;
+
+            System.Console.WriteLine($"My item: {a}");
+            System.Console.WriteLine($"My item: {b}");
+
+            System.Console.WriteLine($"My item: Name: {a.Name}, item number: {a.ItemNumber}, price: {a.Price}, is Member's: {a.IsMembers}");
+            System.Console.WriteLine($"My item: Name: {b.Name}, item number: {b.ItemNumber}, price: {b.Price}, is Member's: {b.IsMembers}");
+
+            System.Console.WriteLine($"My item equals your item? {a.Equals(b)}");
         }
 
-
-        public static async Task Item_call_API()
+        static async Task Main()
         {
-            var itemLibrary = new Dictionary<int, string>();
-            using HttpClient client = new HttpClient();
 
-            for (char alpha = 'a'; alpha <= 'b'; alpha++)
+            ClassBasics();
+
+            // Console.WriteLine();
+            // Console.WriteLine("Welcome to the Runescape Grand Exchange Technical Indicator!");
+            // var option = PrintMenu();
+            // switch (option)
+            // {
+            //     // Top 10 trades
+            //     case 1:
+            //         Console.WriteLine($"You selected {option}. See top 10 trades");
+            //         await GetTop10Trades();
+            //         break;
+            //     // Lookup item value
+            //     case 2:
+            //         break;
+            //     // List recommended buys
+            //     case 3:
+            //         break;
+            //     // List recommended sells
+            //     case 4:
+            //         break;
+            //     // Quit
+            //     case 5 or "" or null:
+            //         break;
+            // }
+        }
+
+        public static async Task BrowseByLetter()
+        {
+            // user input for letter
+            Console.WriteLine("Enter the first letter of the item: ");
+            while (true)
             {
-                for (int page = 1; page <= 2; page++) // adjust page limit as needed
+                string userFirstLetter = Console.ReadLine() ?? string.Empty;
+                if (char.TryParse(userFirstLetter, out char c) && char.IsLetter(c))
                 {
-                    string url = $"https://secure.runescape.com/m=itemdb_rs/api/catalogue/items.json?category=1&alpha={alpha}&page={page}";
-                    string json = await client.GetStringAsync(url);
-
-                    using JsonDocument doc = JsonDocument.Parse(json);
-                    var items = doc.RootElement.GetProperty("items");
+                    Console.WriteLine($"You entered the letter: {c}");
+                    await Item_call_API(c);
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Please enter a single letter a-z.");
                 }
             }
+        }
+
+        public static async Task Item_call_API(char userLetter)
+        {
+            var itemLibrary = new Dictionary<int, string>();
+            int pageNumber = 1;
+            using HttpClient client = new HttpClient();
+
+            string url = $"https://secure.runescape.com/m=itemdb_rs/api/catalogue/items.json?category=1&alpha={userLetter}&page={pageNumber}";
+            string json = await client.GetStringAsync(url);
+
+            using JsonDocument doc = JsonDocument.Parse(json);
+            var items = doc.RootElement.GetProperty("items");
+            Console.WriteLine($"The list of items is shown below:\n {items}");
         }
 
         public static async Task GetTop10Trades()
@@ -117,7 +130,7 @@ namespace RS_GE_TI
             }
         }
 
-        private static int PrintMenu()
+        private static void PrintMenu()
         {
             Console.WriteLine(new String('*', 40));
             Console.WriteLine($"{"* What would you like to do today?",-39}*");
