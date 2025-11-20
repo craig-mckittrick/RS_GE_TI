@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj": {}
+    "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj": {}
   },
   "projects": {
-    "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj": {
+    "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
+        "projectUniqueName": "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
         "projectName": "RS_GE_TI",
-        "projectPath": "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
+        "projectPath": "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
         "packagesPath": "C:\\Users\\mckit\\.nuget\\packages\\",
-        "outputPath": "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\obj\\",
+        "outputPath": "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mckit\\AppData\\Roaming\\NuGet\\NuGet.Config"
