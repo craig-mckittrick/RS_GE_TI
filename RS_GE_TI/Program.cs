@@ -1,9 +1,6 @@
-﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using HtmlAgilityPack;
+﻿using HtmlAgilityPack;
 using System.Text.Json;
-using System.IO;
+
 
 namespace RS_GE_TI
 {
@@ -12,58 +9,9 @@ namespace RS_GE_TI
         public static char itemName;
         public static int itemId;
 
-        private static void ClassBasics()
-        {
-            GE_Items a = new GE_Items();
-            GE_Items b = new GE_Items();
-
-            a.Name = "Maple logs";
-            a.ItemNumber = 1517;
-            a.Price = 319;
-            a.IsMembers = false;
-
-            b.Name = "Dragon hatchet";
-            b.ItemNumber = 6739;
-            b.Price = 36.8;
-            b.IsMembers = true;
-
-            System.Console.WriteLine($"My item: {a}");
-            System.Console.WriteLine($"My item: {b}");
-
-            System.Console.WriteLine($"My item: Name: {a.Name}, item number: {a.ItemNumber}, price: {a.Price}, is Member's: {a.IsMembers}");
-            System.Console.WriteLine($"My item: Name: {b.Name}, item number: {b.ItemNumber}, price: {b.Price}, is Member's: {b.IsMembers}");
-
-            System.Console.WriteLine($"My item equals your item? {a.Equals(b)}");
-        }
-
         static async Task Main()
         {
-
-            ClassBasics();
-
-            // Console.WriteLine();
-            // Console.WriteLine("Welcome to the Runescape Grand Exchange Technical Indicator!");
-            // var option = PrintMenu();
-            // switch (option)
-            // {
-            //     // Top 10 trades
-            //     case 1:
-            //         Console.WriteLine($"You selected {option}. See top 10 trades");
-            //         await GetTop10Trades();
-            //         break;
-            //     // Lookup item value
-            //     case 2:
-            //         break;
-            //     // List recommended buys
-            //     case 3:
-            //         break;
-            //     // List recommended sells
-            //     case 4:
-            //         break;
-            //     // Quit
-            //     case 5 or "" or null:
-            //         break;
-            // }
+            await MainMenu();
         }
 
         public static async Task BrowseByLetter()
@@ -84,6 +32,13 @@ namespace RS_GE_TI
                     Console.WriteLine("Invalid input. Please enter a single letter a-z.");
                 }
             }
+
+            //TODO
+            //parse api data
+            //string[] apiDataArrayed = new string[];
+
+            //print organized data
+
         }
 
         public static async Task Item_call_API(char userLetter)
@@ -130,17 +85,94 @@ namespace RS_GE_TI
             }
         }
 
-        private static void PrintMenu()
+        private static async Task MainMenu()
         {
+            //TODO pass the true menu option string instead of hard code
+
+            Console.WriteLine();
+            Console.WriteLine("Welcome to the Runescape Grand Exchange Technical Indicator!");
+            int option = PrintMenu();
+            switch (option)
+            {
+                // Top 10 trades
+                case 1:
+                    Console.WriteLine($"You selected {option}. See top 10 trades");
+                    await GetTop10Trades();
+                    break;
+                // Lookup item value
+                case 2:
+                    break;
+                // List recommended buys
+                case 3:
+                    break;
+                // List recommended sells
+                case 4:
+                    break;
+                // Quit
+                case 5:
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private static int PrintMenu()
+        {
+            string[] menuOptions = new string[] { "Browse items by first letter", "Lookup item value", "List recommended buys", "List recommended sells", "Quit" };
+
             Console.WriteLine(new String('*', 40));
             Console.WriteLine($"{"* What would you like to do today?",-39}*");
-            Console.WriteLine($"{"* 1. See top 10 trades",-39}*");
-            Console.WriteLine($"{"* 2. Lookup item value",-39}*");
-            Console.WriteLine($"{"* 3. List recommended buys",-39}*");
-            Console.WriteLine($"{"* 4. List recommended sells",-39}*");
-            Console.WriteLine($"{"* 5. Quit",-39}*");
+            int i = 1;
+            foreach (string menuOption in menuOptions)
+            {
+                Console.WriteLine($"{$"* {i}. {menuOption}",-39}*");
+                i++;
+            }
             Console.WriteLine(new String('*', 40));
-            string input = Console.ReadLine();
+            while (true)
+            {
+                string input = Console.ReadLine() ?? string.Empty;
+
+                if (int.TryParse(input, out int output))
+                {
+                    if (output > i-1 || output < 1 )
+                    {
+                        Console.WriteLine("Invalid input.");
+                        PrintMenu();
+                    }
+                    return output;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input.");
+                    PrintMenu();
+                }
+
+            }
+        }
+
+        private static void ClassBasics()
+        {
+            GE_Items a = new GE_Items();
+            GE_Items b = new GE_Items();
+
+            a.Name = "Maple logs";
+            a.ItemNumber = 1517;
+            a.Price = 319;
+            a.IsMembers = false;
+
+            b.Name = "Dragon hatchet";
+            b.ItemNumber = 6739;
+            b.Price = 36.8;
+            b.IsMembers = true;
+
+            System.Console.WriteLine($"My item: {a}");
+            System.Console.WriteLine($"My item: {b}");
+
+            System.Console.WriteLine($"My item: Name: {a.Name}, item number: {a.ItemNumber}, price: {a.Price}, is Member's: {a.IsMembers}");
+            System.Console.WriteLine($"My item: Name: {b.Name}, item number: {b.ItemNumber}, price: {b.Price}, is Member's: {b.IsMembers}");
+
+            System.Console.WriteLine($"My item equals your item? {a.Equals(b)}");
         }
     }
 }
