@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RS_GE_TI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+920c81075c21947ddbf025c63bb02fc6cc10c521")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07a054f13cd9137a04c55fe681edfc4d2189f455")]
 [assembly: System.Reflection.AssemblyProductAttribute("RS_GE_TI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RS_GE_TI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
