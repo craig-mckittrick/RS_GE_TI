@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj": {}
+    "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj": {}
   },
   "projects": {
-    "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj": {
+    "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
+        "projectUniqueName": "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
         "projectName": "RS_GE_TI",
-        "projectPath": "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
+        "projectPath": "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
         "packagesPath": "C:\\Users\\mckit\\.nuget\\packages\\",
-        "outputPath": "d:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI\\obj\\",
+        "outputPath": "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mckit\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -48,6 +48,10 @@
             "HtmlAgilityPack": {
               "target": "Package",
               "version": "[1.12.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
             },
             "System.Text.Json": {
               "target": "Package",
