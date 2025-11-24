@@ -33,12 +33,6 @@ namespace RS_GE_TI
                 }
             }
 
-            //TODO
-            //parse api data
-            //string[] apiDataArrayed = new string[];
-
-            //print organized data
-
         }
 
         public static async Task Item_call_API(char userLetter)
