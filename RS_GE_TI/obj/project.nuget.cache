@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aNgrxzaPZxM=",
+  "dgSpecHash": "4/0EWnhFS1E=",
   "success": true,
-  "projectFilePath": "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
+  "projectFilePath": "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mckit\\.nuget\\packages\\htmlagilitypack\\1.12.4\\htmlagilitypack.1.12.4.nupkg.sha512",
     "C:\\Users\\mckit\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
@@ -13,9 +13,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "PackageReference System.Text.Json will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
+      "projectPath": "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
+      "filePath": "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
       "libraryId": "System.Text.Json",
       "targetGraphs": [
         "net10.0"

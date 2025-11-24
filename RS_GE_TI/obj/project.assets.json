@@ -208,11 +208,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
+      "projectUniqueName": "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
       "projectName": "RS_GE_TI",
-      "projectPath": "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
+      "projectPath": "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\RS_GE_TI.csproj",
       "packagesPath": "C:\\Users\\mckit\\.nuget\\packages\\",
-      "outputPath": "D:\\VisualBasicProjects\\RS_GE_TI\\RS_GE_TI\\obj\\",
+      "outputPath": "E:\\VisualStudioProjects\\RS_GE_TI\\RS_GE_TI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mckit\\AppData\\Roaming\\NuGet\\NuGet.Config"
