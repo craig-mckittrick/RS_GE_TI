@@ -6,18 +6,41 @@ namespace RS_GE_TI
     {
         public static char itemName;
         public static int itemId;
+        public static int sMAThreshold = 7;
+        public static int lMAThreshold = 120;
+        public static double volatilityThreshold = .15;
 
         public List<Item>? itemsList;
 
         static async Task Main()
         {
-
-            // Phase 2: run indicators
-            //StepOne.RunIndicators();
-            var winners = MarketDataService.LoadWinnersFromJson("winners.json");
-            MarketDataService.SaveWinnersToCsvExpanded(winners, "winners.csv");
-
             //await Menus.MainMenu();
+
+            // Research technical indicator success rate
+            //MarketDataService.BacktestIndicators("winners.json");
+
+            // // Define the MA combos you want to test
+            // int[] shortOptions = { 7, 14, 20 };
+            // int[] longOptions = { 80, 120, 150 };
+
+            // // Call SweepMACombos with stop-loss and take-profit thresholds
+            // MarketDataService.SweepMACombos(
+            //     "winners.json",
+            //     shortOptions,
+            //     longOptions,
+            //     stopLossPct: -2.5,   // exit if trade drops 5%
+            //     takeProfitPct: 5.0  // exit if trade gains 10%
+            // );
+
+            // Phase 1: Get volatility winners (Every 6 months)
+            // await MarketDataService.GetVolatilityWinners(volatilityThreshold);
+
+            // Phase 2: Step 1 - Daily price scrub
+            // await DailyMarketData.RefreshWinnersPrices("winners.json");
+
+            // Phase 2: Step 2 - Buy/Sell/Watch Indicators
+            DailyMarketData.RunIndicators(sMAThreshold, lMAThreshold);
+
         }
 
         public static async Task BrowseByLetter()
@@ -59,18 +82,22 @@ namespace RS_GE_TI
 >>>>>>> 8d1b8cc518d50c2761dab9c2e3e15d21f3ea6d8a
         }
 
-        public static decimal ParsePrice(string price)
+        //Phase 2: Step 2 - Daily log of buy indicators
+        public static void ReportBuyIndicators()
         {
-            if (string.IsNullOrWhiteSpace(price)) return 0;
 
-            price = price.ToLower().Replace("current guide price", "").Trim();
+        }
 
-            if (price.EndsWith("k"))
-                return decimal.Parse(price[..^1]) * 1000;
-            if (price.EndsWith("m"))
-                return decimal.Parse(price[..^1]) * 1_000_000;
+        //Phase 2: Step 2 - Daily log of sell indicators
+        public static void ReportSellIndicators()
+        {
 
-            return decimal.TryParse(price, out var value) ? value : 0;
+        }
+
+        //Phase 2: Step 2 - Daily log of watch indicators
+        public static void ReportWatchIndicators()
+        {
+
         }
     }
 }

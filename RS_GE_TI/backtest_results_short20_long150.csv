@@ -1,0 +1,10 @@
+Item,Day,Signal,Price,EntryPrice,EntryDay,PctChange
+Rune dart tip,178,BUY,287,287,178,
+Body rune,152,BUY,34,34,152,
+Body rune,153,EXIT,33,34,152,-2.94
+Radiant energy,152,BUY,262,262,152,
+Radiant energy,164,EXIT,252,262,152,-3.82
+Raw rocktail,173,BUY,1102,1102,173,
+Raw rocktail,174,EXIT,1217,1102,173,10.44
+Water talisman,175,BUY,769,769,175,
+Water talisman,176,EXIT,862,769,175,12.09

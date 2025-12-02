@@ -53,3 +53,4 @@ D:\VisualBasicProjects\RS_GE_TI\RS_GE_TI\obj\Debug\net10.0\RS_GE_TI.csproj.Up2Da
 D:\VisualBasicProjects\RS_GE_TI\RS_GE_TI\obj\Debug\net10.0\RS_GE_TI.genruntimeconfig.cache
 D:\VisualBasicProjects\RS_GE_TI\RS_GE_TI\obj\Debug\net10.0\ref\RS_GE_TI.dll
 D:\VisualBasicProjects\RS_GE_TI\RS_GE_TI\bin\Debug\net10.0\Newtonsoft.Json.dll
+d:\VisualBasicProjects\RS_GE_TI\RS_GE_TI\bin\Debug\net10.0\winners.json

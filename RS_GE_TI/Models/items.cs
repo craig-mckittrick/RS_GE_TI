@@ -34,7 +34,10 @@ public class Item
 
     [JsonPropertyName("members")]
     public string Members { get; set; }
+
+    public DateTime GEDate { get; set; }
 }
+
 
 public class Current
 {

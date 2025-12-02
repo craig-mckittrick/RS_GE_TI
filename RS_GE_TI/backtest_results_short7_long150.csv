@@ -1,0 +1,20 @@
+Item,Day,Signal,Price,EntryPrice,EntryDay,PctChange
+Headless arrow,171,BUY,85,85,171,
+Rune dart tip,171,BUY,287,287,171,
+Rune dart tip,172,EXIT,306,287,171,6.62
+Flesh rune,155,BUY,597,597,155,
+Flesh rune,159,EXIT,569,597,155,-4.69
+Soul rune,164,BUY,832,832,164,
+Soul rune,166,EXIT,880,832,164,5.77
+Spring,166,BUY,2580,2580,166,
+Spring,168,EXIT,2734,2580,166,5.97
+Brilliant energy,176,BUY,223,223,176,
+Brilliant energy,177,EXIT,185,223,176,-17.04
+Radiant energy,151,BUY,262,262,151,
+Radiant energy,164,EXIT,252,262,151,-3.82
+Raw rocktail,167,BUY,1068,1068,167,
+Raw rocktail,172,EXIT,1209,1068,167,13.20
+Dragon arrowheads,174,BUY,402,402,174,
+Dragon arrowheads,175,EXIT,346,402,174,-13.93
+Water talisman,169,BUY,769,769,169,
+Water talisman,172,EXIT,854,769,169,11.05

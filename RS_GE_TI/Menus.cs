@@ -6,6 +6,7 @@ namespace RS_GE_TI
                                                              "List Top 100 Trades",
                                                              "List recommended buys",
                                                              "List recommended sells",
+                                                             "List recommended watch",
                                                              "Quit" };
     public static async Task MainMenu()
     {
@@ -24,14 +25,18 @@ namespace RS_GE_TI
           break;
         // List recommended buys
         case 3:
-
+          Program.ReportBuyIndicators();
           break;
         // List recommended sells
         case 4:
-
+          Program.ReportSellIndicators();
+          break;
+        // List recommended watch
+        case 5:
+          Program.ReportWatchIndicators();
           break;
         // Quit
-        case 5:
+        case 6:
           break;
         default:
           break;
@@ -62,7 +67,7 @@ namespace RS_GE_TI
             PrintMenu();
           }
           //confirm
-          ConfirmMenuChoice($"You selected '{output}. {mainMenuOptions[output-1]}'.");
+          ConfirmMenuChoice($"You selected '{output}. {mainMenuOptions[output - 1]}'.");
           return output;
         }
         else

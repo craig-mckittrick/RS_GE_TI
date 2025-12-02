@@ -1,0 +1,62 @@
+Item,Day,Signal,Price,EntryPrice,EntryDay,PctChange
+Chronotes,152,BUY,307,307,152,
+Chronotes,158,SELL,313,307,152,1.95
+Headless arrow,172,BUY,87,87,172,
+Headless arrow,176,EXIT,84,87,172,-3.45
+Rune dart tip,82,BUY,312,312,82,
+Rune dart tip,89,EXIT,303,312,82,-2.88
+Rune dart tip,172,BUY,306,306,172,
+Rune dart tip,173,EXIT,287,306,172,-6.21
+Air rune,130,BUY,39,39,130,
+Air rune,135,EXIT,38,39,130,-2.56
+Earth rune,127,BUY,30,30,127,
+Earth rune,139,EXIT,29,30,127,-3.33
+Body rune,143,BUY,31,31,143,
+Body rune,148,EXIT,33,31,143,6.45
+Mind rune,100,BUY,18,18,100,
+Mind rune,112,EXIT,19,18,100,5.56
+Maple logs,124,BUY,392,392,124,
+Maple logs,141,EXIT,415,392,124,5.87
+Soul rune,82,BUY,819,819,82,
+Soul rune,86,EXIT,866,819,82,5.74
+Soul rune,140,BUY,895,895,140,
+Soul rune,141,EXIT,872,895,140,-2.57
+Soul rune,173,BUY,908,908,173,
+Soul rune,174,EXIT,992,908,173,9.25
+Rune dart,125,BUY,69,69,125,
+Rune dart,129,EXIT,73,69,125,5.80
+Coal,87,BUY,353,353,87,
+Coal,97,EXIT,342,353,87,-3.12
+Coal,123,BUY,360,360,123,
+Coal,133,EXIT,383,360,123,6.39
+Spring,131,BUY,2753,2753,131,
+Spring,146,EXIT,2585,2753,131,-6.10
+Spring,170,BUY,2734,2734,170,
+Spring,172,EXIT,2662,2734,170,-2.63
+Vial of water,128,BUY,79,79,128,
+Vial of water,131,EXIT,77,79,128,-2.53
+Luminous energy,147,BUY,200,200,147,
+Luminous energy,148,EXIT,195,200,147,-2.50
+Vibrant energy,85,BUY,394,394,85,
+Vibrant energy,94,EXIT,371,394,85,-5.84
+Radiant energy,136,BUY,242,242,136,
+Radiant energy,150,EXIT,256,242,136,5.79
+Fishing bait,133,BUY,16,16,133,
+Fishing bait,147,EXIT,15,16,133,-6.25
+Raw rocktail,102,BUY,1122,1122,102,
+Raw rocktail,106,EXIT,1083,1122,102,-3.48
+Raw rocktail,176,BUY,1144,1144,176,
+Raw rocktail,177,EXIT,1102,1144,176,-3.67
+Dragon arrowheads,121,BUY,357,357,121,
+Dragon arrowheads,144,EXIT,340,357,121,-4.76
+Dragon arrowheads,179,BUY,346,346,179,
+Water talisman,171,BUY,769,769,171,
+Water talisman,172,EXIT,854,769,171,11.05
+Catalytic anima stone,99,BUY,920,920,99,
+Catalytic anima stone,108,EXIT,895,920,99,-2.72
+Infernal ashes,96,BUY,574,574,96,
+Infernal ashes,102,EXIT,559,574,96,-2.61
+Raw shark,159,BUY,413,413,159,
+Raw shark,162,EXIT,442,413,159,7.02
+Steel arrow,143,BUY,24,24,143,
+Steel arrow,147,EXIT,23,24,143,-4.17

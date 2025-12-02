@@ -1,0 +1,34 @@
+Item,Day,Signal,Price,EntryPrice,EntryDay,PctChange
+Headless arrow,173,BUY,85,85,173,
+Rune dart tip,174,BUY,302,302,174,
+Rune dart tip,175,EXIT,287,302,174,-4.97
+Earth rune,122,BUY,31,31,122,
+Earth rune,123,EXIT,30,31,122,-3.23
+Body rune,147,BUY,32,32,147,
+Body rune,149,EXIT,34,32,147,6.25
+Mind rune,120,BUY,19,19,120,
+Mind rune,123,EXIT,18,19,120,-5.26
+Soul rune,168,BUY,908,908,168,
+Soul rune,172,EXIT,1013,908,168,11.56
+Rune dart,122,BUY,66,66,122,
+Rune dart,127,EXIT,71,66,122,7.58
+Coal,123,BUY,360,360,123,
+Coal,133,EXIT,383,360,123,6.39
+Spring,125,BUY,2405,2405,125,
+Spring,127,EXIT,2536,2405,125,5.45
+Spring,170,BUY,2734,2734,170,
+Spring,172,EXIT,2662,2734,170,-2.63
+Vial of water,126,BUY,79,79,126,
+Vial of water,131,EXIT,77,79,126,-2.53
+Radiant energy,143,BUY,240,240,143,
+Radiant energy,150,EXIT,256,240,143,6.67
+Fishing bait,132,BUY,16,16,132,
+Fishing bait,147,EXIT,15,16,132,-6.25
+Raw rocktail,171,BUY,1102,1102,171,
+Raw rocktail,172,EXIT,1209,1102,171,9.71
+Dragon arrowheads,176,BUY,412,412,176,
+Dragon arrowheads,177,EXIT,346,412,176,-16.02
+Water talisman,172,BUY,854,854,172,
+Water talisman,173,EXIT,769,854,172,-9.95
+Raw shark,151,BUY,400,400,151,
+Raw shark,156,EXIT,420,400,151,5.00

@@ -43,3 +43,10 @@ private static void ClassBasics()
         signal = "SELL";
     else
         signal = "HOLD";
+
+    // Daily fetch of prices for winners.json list of items
+    public static async Task<List<ItemData>> FetchLatestPrices()
+    {
+      var prices = await FetchItemGraph(item.Id);
+      return;
+    }
